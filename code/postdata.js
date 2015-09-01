@@ -6,6 +6,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     pictureSource = navigator.camera.PictureSourceType;
     destinationType = navigator.camera.DestinationType;
+	alert("ready");
 }
  
 function clearCache() {
@@ -57,8 +58,8 @@ function onFail(message) {
 function postData() {
 
 	var formData = $("#ContactForm").serialize();
-	//var target="http://store.ojpeters.com/savecomment";
-	var target="http://localhost/remotemobile/index.php/savecomment"		
+	var target="http://store.ojpeters.com/savedata/addcomment";
+	//var target="http://localhost/remotemobile/index.php/savecomment"		
 	alert("calling post");
 	$.ajax({
 			type: "POST",
@@ -137,7 +138,7 @@ function postData() {
             alertDismissed,         // callback
             'Game Over',            // title
             'Done'                  // buttonName
-        );
+        ); 
     }
 function alertDismissed(){
 //do nothing
