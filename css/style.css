@@ -1,15 +1,4 @@
-#panel
-{
-padding:5px;
-text-align:center;
-background-color:#fff;
-border:solid 1px #c3c3c3;
-}
-#panel
-{
-padding:50px;
-display:none;
-}
+
 
 button.camera-control {
   background-color: #f3f3f3;

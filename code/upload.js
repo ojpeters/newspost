@@ -1,5 +1,5 @@
 function capturePhoto(){
-    navigator.camera.getPicture(uploadPhoto,uploadfail,{sourceType:1,quality:60});
+    navigator.camera.getPicture(uploadPhoto,null,{sourceType:1,quality:60});
 }
 function uploadPhoto(data){
 // this is where you would send the image file to server
@@ -32,15 +32,7 @@ function uploadPhoto(data){
 
 }
 //failed
-function uploadfail(message){
-navigator.notification.alert(
-		'Your Photo has failed to upload',
-		failedDismissed,
-	    'Photo Not Uploaded',
-	    'OK'
-		);
 
-}
 function okay(){
 	// Do something
 }
